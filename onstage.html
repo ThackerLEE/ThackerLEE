@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>온스테이지</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="spot"> 
+            <div class="inner">
+                <h2 class="spot_title">
+                    <strong>MORE</strong> THEN ONSTAGE
+                    THIS IS <strong>ONSTAGE 2.0</strong>
+                </h2>
+                <div class="video_outer">
+                    <iframe
+                        src="https://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=09B8ADA7DE6AF974B944D3B32D2F617EC61B&amp;outKey=V12128814c8e62098c59a021dc9e8493b2099b92aafbd1be6c939021dc9e8493b2099&amp;controlBarMovable=true&amp;jsCallable=true&amp;isAutoPlay=true&amp;skinName=tvcast_white"
+                        frameborder="no" scrolling="no" marginwidth="0" marginheight="0" width="898" height="505"
+                        allow="autoplay" allowfullscreen=""></iframe>
+                </div>
+                <p class="spot_subtitle">
+                    <span>More Live, More Change, More Power</span>
+                    숨은 음악에 대한 새로운 접근, 온스테이지 2.0
+                </p>
+                <a href="#" class="linkbox">온스테이지 2.0 자세히 보기</a>
+            </div>
+        </div>
+        <div id="onstage_2dot0">
+            <div class="inner">
+                <h3 class="onstage2_title">
+                    <strong>ONSTAGE 2.0</strong> <!-- 배경 이미지로 교체 -->
+                    진짜 라이브란 이런 것! 음악에 집중한 원테이크
+                </h3>
+                <a href="#" class="linkbox_video music1 off">
+                    <dl class="dllist">
+                        <dt>레이브릭스</dt>
+                        <dd>My City</dd>
+                    </dl>
+                </a>
+                <a href="#" class="linkbox_video music2">
+                    <dl class="dllist">
+                        <dt>레이브릭스</dt>
+                        <dd>Whale Cry</dd>
+                    </dl>
+                </a>
+                <a href="#" class="linkbox_video music3 off">
+                    <dl class="dllist">
+                        <dt>레이브릭스</dt>
+                        <dd>새벽</dd>
+                    </dl>
+                </a>
+                <p class="txtbox">
+                    첫번째 뮤지션, <span>레이브릭스</span> <br>
+                    8월 16일 공개
+                </p>
+            </div>
+        </div>
+        <div id="onstage_x">
+            <div class="inner">
+                <h3 class="onstagex_title">
+                    <strong>네이버프로젝트 꽃 ONSTAGE X</strong>
+                    뮤지션과 아티스트의 감각적인 만남, 컬라보 스테이지
+                </h3>
+                <div class="slide_box">
+                    <button class="onstage_prev slick-arrow">이전</button>
+                    <section class="onstage slider">
+                        <div><a href="#" class="item musician1"></a></div>
+                        <div><a href="#" class="item musician2"></a></div>
+                        <div><a href="#" class="item musician3"></a></div>
+                    </section>
+                    <button class="onstage_next slick-arrow">다음</button>
+                </div>
+                <div class="txtbox">
+                    <p class="left">
+                        온스테이지 X의 첫번째 무대
+                        <a href="#" class="linkbox">공연신청 바로가기</a>
+                    </p>
+                    <p class="right">
+                        8월 30일 오후 8시 <br>
+                        반포 한강공원 2층 컨벤션홀
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="digging">
+            <div class="inner">
+                <h3 class="digging_title">
+                    <strong>디깅클럽서울</strong>
+                    주목받아 마땅한,<br>
+                    시대를 앞선 숨은 음악의 재조명
+                </h3>
+            </div>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="left">
+                    <a href="#" class="linkbox">
+                        <span class="blind">ONSTAGE</span>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="#" class="linkbox">
+                        <span class="blind">네이버 꽃</span>
+                    </a>
+                    <span class="blind">다양한 스몰비지니스와 크리에이터의 가치가 발견되고
+                    그 이름을 꽃 피울 수 있도록 네이버가 함께 합니다. </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        $('.onstage').slick({
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinity: true,
+            arrow: true,
+            prevArrow: '.onstage_prev',
+            nextArrow: '.onstage_next'
+        });
+    </script>
+</body>
+
+</html>
