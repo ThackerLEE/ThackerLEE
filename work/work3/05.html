@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 속성</title>
+    <style>
+        body{
+             background-image:url(bg5.png), linear-gradient(45deg, #fff, rgb(212, 84, 238)); background-repeat: no-repeat; background-position: right center; background-attachment: fixed; 
+        }
+        .box1, .box2, .box3{width:500px; margin: 20px auto 40px; padding: 20px; border:5px solid #ccc; background-color: #fff; background-image: url(bg2.jpg); line-height: 1.4;}
+        .box1{           
+            background-position: top;
+            background-size: 100px;
+            background-repeat: repeat-x ;
+            font-variant-caps: all-petite-caps;
+            font-size:20px;         
+        }
+        .box2{                        
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 120px;
+            font-variant-caps: all-small-caps;
+            font-size: 20px;
+        }
+        .box3{            
+            background-repeat: repeat-y;
+            background-position: right;
+            background-size: cover;
+            background-image: url(plants.jpg);
+            color: ivory;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- .box$ -->
+    <div class="box1">
+        <h1>초콜릿01</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo molestiae natus excepturi necessitatibus dolorem voluptatum? Deserunt nihil minima voluptate, porro illo quidem voluptatibus consequuntur ipsa ad iste alias minus maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo molestiae natus excepturi necessitatibus dolorem voluptatum? Deserunt nihil minima voluptate, porro illo quidem voluptatibus consequuntur ipsa ad iste alias minus maxime?</p>
+    </div>
+    <div class="box2">
+        <h1>초콜릿02</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo molestiae natus excepturi necessitatibus dolorem voluptatum? Deserunt nihil minima voluptate, porro illo quidem voluptatibus consequuntur ipsa ad iste alias minus maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo molestiae natus excepturi necessitatibus dolorem voluptatum? Deserunt nihil minima voluptate, porro illo quidem voluptatibus consequuntur ipsa ad iste alias minus maxime?</p>
+    </div>
+    <div class="box3">
+        <h1>초콜릿03</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo molestiae natus excepturi necessitatibus dolorem voluptatum? Deserunt nihil minima voluptate, porro illo quidem voluptatibus consequuntur ipsa ad iste alias minus maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo molestiae natus excepturi necessitatibus dolorem voluptatum? Deserunt nihil minima voluptate, porro illo quidem voluptatibus consequuntur ipsa ad iste alias minus maxime?</p>
+    </div>
+</body>
+</html>

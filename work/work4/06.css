@@ -1,0 +1,67 @@
+.test{
+    width: 100px; height: 100px; background-color: tomato; position: relative; left: 100px; top: 100px;
+}
+.test2{
+    width: 100px; height: 100px;  margin: 0 auto; position: relative; left: 100px; top: 100px;
+}
+#wrap{
+    width: 500px; margin: 0 auto;
+}
+#content{
+    border: 5px solid blue; height: 400px; margin-bottom: 20px; position: relative;
+}
+#content div{
+    position: absolute; width: 50px; height: 50px; text-align: center; line-height: 50px;
+}
+#content .box1{
+    background-color: green; color: #fff; left: 0; top: 0;
+}
+#content .box2{
+    background-color: green; color: #fff; right: 0; top: 0;
+}
+#content .box3{
+    background-color: green; color: #fff; left: 0; bottom: 0;
+}
+#content .box4{
+    background-color: green; color: #fff; right: 0; bottom: 0;
+}
+#content .box5{
+    background-color: gray; left: 120%; top: 0; width: 200px; margin-left: -90%;
+}
+#content .box6{
+    background-color: deeppink; left: 50%; top: 50%; border-radius: 50%; width: 100px; height: 100px; line-height: 100px; margin-top: -50px; margin-left: -50px;
+}
+#content .box7{
+    width: 100px; height: 300px; background-color: green; top: 0; left: -120px;
+}
+#footer{
+    border: 5px solid blue; height: 100px; position: relative; 
+}
+#footer span{
+    position: absolute; width: 50px; height: 50px; border-radius: 50%; top: 50%; margin-top: -25px; line-height: 50px; text-align: center;
+}
+#footer span:nth-child(1){
+    background-color: hotpink; right: 100px;
+}
+#footer span:nth-child(2){
+    background-color: orange; right: 60px; z-index: 1;
+}
+#footer span:nth-child(3){
+    background-color: paleturquoise;right: 20px;
+}
+.top{
+    width: 50px; height: 50px; background-color: red; border-radius: 50%;
+    text-align: center; line-height: 50px; position: fixed;right: 20px; bottom: 30px;
+}
+body{
+    height: 2000px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.bottom{
+    margin: 0 auto; 
+    text-align: center;
+    position: fixed;
+     bottom: 10px;
+}

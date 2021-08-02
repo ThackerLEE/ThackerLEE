@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://127.0.0.1:5500/05.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css 글자 속성</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+        h1 {
+            color: darkblue;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: 42px;
+            font-weight: bold;
+            font-style: oblique;
+            text-decoration: line-through;
+            text-align: center;
+            letter-spacing: 10px;
+            word-spacing: 15px;
+            text-shadow: 10px 10px 10px #333;
+        }
+
+        .textbox {
+            text-indent: 20px;
+            text-transform: capitalize;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-variant: small-caps;
+        }
+
+        .kwkw {
+            font-size: 32px;
+            font-weight: bold;
+            color: skyblue;
+            font-family: 'Nanum Pen Script', cursive;
+            letter-spacing: 10px;
+            font-style: italic;
+            text-shadow: 3px 3px 3px #ddd;
+            text-align: center;
+        }
+
+        .list {
+            list-style-type: none; font-size: 12px;
+            border-bottom: 2px dotted red;
+        }
+
+        .sub_list {
+            list-style-position: inside;
+            list-style-type: square;
+            border-bottom: 2px dashed rgb(212, 81, 230);
+        }
+
+        ol {
+            list-style-type: decimal-leading-zero;
+        }
+
+        #wrap {
+            min-height: 70vh;
+            border: 2px solid red;
+            width: 700px;
+            padding: 20px 50px;
+            margin: auto auto;
+        }
+
+        .circle {
+            width: 500px;
+            height: 500px;
+            border: 3px solid orange;
+            margin: 50px auto;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 500px;
+            box-shadow: 10px 10px 5px gray;
+        }
+
+        .circle2 {
+            width: 300px;
+            height: 300px;
+            border: 3px solid orange;
+            margin: 50px auto;
+            /* border-radius: 50%; */
+            text-align: center;
+            line-height: 300px;
+            border-top-left-radius: 50%;
+            box-shadow: 10px 10px 5px greenyellow;
+        }
+        .dot li ul {
+            list-style-type: square;
+            list-style-image: none;
+        }
+        .dot {
+            list-style-image: url(dot.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>이지스퍼블리싱 신입 사원 모집 공고</h1>
+
+        <p class="kwkw">IT 기획, 편집 부서에서 함께 할 신입 사원을 모집합니다.</p>
+        <ul class="list">
+            <li>-모집 직군 : 편집 기획 부서</li>
+            <li>-직무 내용 : 도서 프로듀싱 업무 (신입 지원 가능)
+                <ul class="sub_list">
+                    <li>도서 기획, 편집</li>
+                    <li>도서 홍보, 독자 소통</li>
+                </ul>
+            </li>
+            <li>-접수 마감일 : 2021.3.6.
+            </li>
+        </ul>
+        <p>자세한 내용은 공지 게시판을 참고하세요.</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <p class="textbox">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis id earum ducimus repellat
+            sunt voluptatem autem deleniti, quod quasi ipsam, perferendis quae omnis commodi sequi eligendi. Porro
+            soluta rem amet.</p>
+        <ol>
+            <li>benz</li>
+            <li>bmw</li>
+            <li>audi</li>
+        </ol>
+        <div class="circle">circle</div>
+        <div class="circle2">circle2</div>
+        <ul class="dot">
+            <li>1-1</li>
+            <ul>
+                <li>2-1</li>
+                <li>2-2</li>
+            </ul>
+            <li>1-2</li>
+            <li>1-3</li>
+        </ul>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

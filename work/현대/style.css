@@ -1,0 +1,146 @@
+@charset "utf-8";
+body, h1, h2, h3, p, ul, li, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul{ list-style: none;}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#wrap{
+
+}
+header {
+    width: 1050px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+header .logo{
+    float: left;
+    padding-top: 20px;
+}
+header .logo img{
+    /* margin-top: ; */
+}
+header .top_menu{
+    position: absolute;
+    right: 10px;
+}
+.top_menu ul{ 
+    padding-top: 10px;
+    font-size: 12px;
+}
+.top_menu ul li{
+    float: left;
+    text-transform: capitalize;
+}
+.top_menu ul li::after{
+    content: "|";
+    color: blue;
+    padding: 0 10px;
+}
+.top_menu ul li:last-child::after{
+    content: "";
+    display: none;
+}
+
+.main_menu{
+    background-color: #0b2972;
+    height: 40px;
+}
+.main_menu ul{
+    width: 720px;
+    margin: 0 auto;
+}
+.main_menu ul li{
+    float: left;
+    margin: 0 30px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.main_menu li a{
+    color: #fff;
+}
+
+.main_menu li a:hover{
+    cursor: pointer;
+    color: red
+}
+#visual{
+    background: url(현대스틸_소스/images/banner01.jpg) no-repeat center / cover;
+    height: 385px;
+}
+#content{
+    margin: 24px auto;
+    width: 1050px;
+
+}
+#content section{
+    float: left;
+}
+#content section .sub_title{ 
+    margin-bottom: 10px;
+}
+#content section .sub_title span{
+    color: #0b2972;
+}
+.news{
+    width: 280px;
+}
+.news_list{
+    font-size: 14px;}
+.news_list li{
+    line-height: 2;
+    color: #555;
+    padding: 0 5px;
+}
+.news_list li:nth-child(2n){
+    background-color: #f5f5f5;
+}
+.news_list li span{
+    float: right;
+}
+.product{
+    width: 360px;
+    margin: 0 40px;
+}
+.business{
+    width: 280px;
+}
+footer{
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    height: 100px;
+}
+.inner{
+    width: 1050px;
+    margin: 0 auto;
+}
+.btm_menu{
+    width: 400px;
+}
+.btm_menu li{
+    font-weight: bold;
+    float: left;
+    margin: 10px 15px 10px 0;
+}
+/* .btm_menu li:first-child::after{
+    content: "|"; padding: 0 10px; color: #555;
+} */
+.copy{
+    float: left;
+    font-size: 12px;
+    font-weight: 100;
+}
+.copy span{
+    color: #0b2972;
+    font-weight: bold;
+}

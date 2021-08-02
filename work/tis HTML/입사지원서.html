@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 태그 로그인</title>
+    <!-- <style>
+        form {
+            width: 500px;
+            margin: 40px auto;
+            border: 1px solid #333;
+            padding: 50px;
+        }
+
+        fieldset {
+            border: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+        label[for^="user"] { 
+            width: 60px auto;
+        }
+    </style> -->
+</head>
+
+<body>
+    <form action="서버주소" method="POST">
+        <h1>프론트엔드 개발자 지원서</h1>
+        <p>HTML CSS Script에 대한 기술적 이해와 경험이 있는분 찾습니다.</p>
+        <hr>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="user_id">이름</label>
+                    <input type="text" id="user_id" autofocus>
+                </li>
+                <li>
+                    <label for="user_tel">연락처</label>
+                    <input type="tel" id="user_tel">
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <h2>지원분야</h2>
+            <ul>
+                <li><label><input type="radio" name="subject" checked> 웹퍼블리싱</label></li>
+                <li><label><input type="radio" name="subject" > 웹개발</label></li>
+                <li><label><input type="radio" name="subject" > 웹기획</label></li>
+            </ul>
+        </div>
+        <fieldset>
+            <legend>지원동기</legend>
+            <textarea cols="50" rows="10" placeholder="지원동기를 입력해주세요"> </textarea> 
+        </fieldset> 
+        <div>
+            <input type="submit" value="접수하기">
+            <input type="reset" value="다시작성">
+        </div>
+        <input type="submit" value="click!"/>
+        <input type="text" name="firstName" value="okky"/>
+        <pre class="line-nubers languge-markup"></pre>
+        
+           
+    </form>
+
+</body>
+
+</html>

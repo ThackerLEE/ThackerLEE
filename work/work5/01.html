@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS복습</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+    #wrap {
+        width: 700px;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration: underline;
+        color: blue;
+        font-size: 42px;
+        font-weight: 900;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-style: italic;
+        text-shadow: 3px 3px 5px skyblue;
+    }
+
+    .menu {
+        list-style: none;
+        font-size: 22px;
+        background-color: yellow;
+        /* text-align: center; */
+        width: 546px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .menu li {
+        display: inline-block;
+        border: 1px solid #333;
+        padding: 10px 30px;
+        cursor: pointer;
+    }
+
+    .menu li:hover {
+        background-color: #333;
+        color: #fff;
+    }
+
+    p {
+        border: 1px solid #333;
+        padding: 50px;
+        line-height: 5;
+    }
+
+    #wrap p {
+        background-image: url(test.jpg);
+        background-size: 100px;
+    }
+
+    #con1 {
+        background-repeat: repeat-x;
+    }
+
+    #con2 {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #wrap #con3 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #con4 {
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    body {
+        background: #ddd url(test.jpg) no-repeat fixed right center / 200px;
+    }
+    /* background: 배경색상  이미지경로  반복속성 고정속성 포지션 /배경이미지사이즈 */
+</style>
+
+<body>
+    <h1>CSS 기본 문법</h1>
+    <div id="wrap">
+        <ul class="menu">
+            <li><a href="#con1">menu1</a></li>
+            <li><a href="#con2">menu2</a></li>
+            <li><a href="#con3">menu3</a></li>
+            <li><a href="#con4">menu4</a></li>
+        </ul>
+        <div id="content">
+            <p id="con1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt vitae iusto esse quod
+                distinctio
+                sapiente vel ab odio magni facilis sint quisquam exercitationem repudiandae, nam consequatur voluptates
+                magnam amet, quae rerum cumque dolorum eaque, autem fuga. Earum debitis culpa ipsam repellendus est nam
+                nostrum dolorum hic exercitationem eius repellat voluptates assumenda ipsum non iusto amet facere,
+                autem, ratione, veritatis pariatur ipsa saepe quam distinctio? Molestias, reiciendis doloremque
+                inventore iusto harum veritatis consequatur, enim quos, sequi explicabo illo vel. Magnam debitis omnis
+                laboriosam error, animi suscipit et ad aperiam nobis, sed asperiores. Culpa nemo suscipit perferendis
+                saepe, alias beatae voluptatibus.</p>
+            <p id="con2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt vitae iusto esse quod
+                distinctio
+                sapiente vel ab odio magni facilis sint quisquam exercitationem repudiandae, nam consequatur voluptates
+                magnam amet, quae rerum cumque dolorum eaque, autem fuga. Earum debitis culpa ipsam repellendus est nam
+                nostrum dolorum hic exercitationem eius repellat voluptates assumenda ipsum non iusto amet facere,
+                autem, ratione, veritatis pariatur ipsa saepe quam distinctio? Molestias, reiciendis doloremque
+                inventore iusto harum veritatis consequatur, enim quos, sequi explicabo illo vel. Magnam debitis omnis
+                laboriosam error, animi suscipit et ad aperiam nobis, sed asperiores. Culpa nemo suscipit perferendis
+                saepe, alias beatae voluptatibus.</p>
+            <p id="con3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt vitae iusto esse quod
+                distinctio
+                sapiente vel ab odio magni facilis sint quisquam exercitationem repudiandae, nam consequatur voluptates
+                magnam amet, quae rerum cumque dolorum eaque, autem fuga. Earum debitis culpa ipsam repellendus est nam
+                nostrum dolorum hic exercitationem eius repellat voluptates assumenda ipsum non iusto amet facere,
+                autem, ratione, veritatis pariatur ipsa saepe quam distinctio? Molestias, reiciendis doloremque
+                inventore iusto harum veritatis consequatur, enim quos, sequi explicabo illo vel. Magnam debitis omnis
+                laboriosam error, animi suscipit et ad aperiam nobis, sed asperiores. Culpa nemo suscipit perferendis
+                saepe, alias beatae voluptatibus.</p>
+            <p id="con4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt vitae iusto esse quod
+                distinctio
+                sapiente vel ab odio magni facilis sint quisquam exercitationem repudiandae, nam consequatur voluptates
+                magnam amet, quae rerum cumque dolorum eaque, autem fuga. Earum debitis culpa ipsam repellendus est nam
+                nostrum dolorum hic exercitationem eius repellat voluptates assumenda ipsum non iusto amet facere,
+                autem, ratione, veritatis pariatur ipsa saepe quam distinctio? Molestias, reiciendis doloremque
+                inventore iusto harum veritatis consequatur, enim quos, sequi explicabo illo vel. Magnam debitis omnis
+                laboriosam error, animi suscipit et ad aperiam nobis, sed asperiores. Culpa nemo suscipit perferendis
+                saepe, alias beatae voluptatibus.</p>
+            </ul>
+        </div>
+        <ul class="menu">
+            <li><a href="#con1">menu1</a></li>
+            <li><a href="#con2">menu2</a></li>
+            <li><a href="#con3">menu3</a></li>
+            <li><a href="#con4">menu4</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

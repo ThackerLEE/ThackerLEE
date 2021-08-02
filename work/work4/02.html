@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            width: 700px;
+            margin: 0 auto;
+            border: 1px solid hotpink;
+        }
+        #header{
+            background-color: coral;
+        }
+        #header .menu{
+            list-style: none;
+            width:332px; margin: 0 auto;
+        }
+        /* #header .menu::before{
+            content: "오늘은;;;";
+        }
+
+        #header .menu::after{
+            content: "안녕하세요"; 
+        }
+        */
+        #header .menu::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+        #header .menu li{ 
+            padding: 10px 30px;
+            background-color: rgba(200, 0, 0, 0.3);
+            color: #fff;
+            float: left;
+        }
+        #content::after{
+            content: "asdasd";
+            display: block;
+            clear: both;
+        }
+        #content{
+            background-color: skyblue;
+        }
+        .left{
+            width: 250px;
+            float: left;
+            height: 300px;
+            background-color: yellowgreen;
+        }
+        .right{
+            width: 400px;
+            float: right;
+            height: 300px;
+            background-color: teal;
+        }
+        #footer{
+            background-color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <ul class="menu">
+            <!-- .menu::before --> <!--line 가상공간-->
+            <!-- <span>오늘은;;;</span> -->
+                <li>m1</li>
+                <li>m2</li>
+                <li>m3</li>
+                <li>m4</li>
+            </ul>
+            <!-- <span>안녕하세요</span> -->
+            <!-- .menu::after --> <!--line 가상공간-->
+        </div>
+        <div id="content">
+            <div class="left">left menu</div>
+            <div class="right">main content</div>
+        </div>
+        <div id="footer">copyright</div>
+    </div>
+</body>
+</html>

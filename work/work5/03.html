@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹문서 구조를 만드는 시멘틱 태그</title>
+    <style>
+        *{ 
+            margin: 0%; 
+            padding: 0; 
+            border: 1px solid #ddd;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .clear::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #wrap{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .line_blue{
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        header{
+            height: 140px;
+            margin: 0 auto;
+        }
+        header h1{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        /* header nav{} */
+        .gnb{
+            list-style: none;
+            width: 728px;
+            margin: 0 auto;
+            overflow: hidden;
+           }
+        .gnb li{
+            float: left;
+            padding: 10px;
+            width: 160px;
+            height: 50px;
+            background-color: skyblue ;
+            text-align: center;
+            line-height: 50px;
+        }
+        .gnb li:hover{
+            background-color: steelblue;
+        }
+        .gnb li:hover{
+            color: #fff;
+        }
+        /* .gnb li a{} */
+        #content{
+            margin: 10px 0;
+        }
+        #content aside{
+            width: 150px;
+            float: left;
+        }
+        #content section{
+            width: 400px;
+            float: left;
+            margin: 0 13px;
+        }
+        #content h2{
+            margin-bottom: 10px;
+        }
+        #content ul{
+            padding-left: 20px;
+        }
+        #content section article{
+            margin-bottom: 10px;
+        }
+        footer{
+            height: 100px;
+        }
+        footer h3 { margin-bottom: 10px;}
+    </style>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header class="line_blue">
+            <h1>사이트 제목</h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">menu01</a></li>
+                    <li><a href="#">menu02</a></li>
+                    <li><a href="#">menu03</a></li>
+                    <li><a href="#">menu04</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="content" class="clear"><!--  main -->
+            <aside class="line_blue">
+                <h2>사이드바</h2>
+                <ul>
+                    <li>항목1</li>
+                    <li>항목2</li>
+                    <li>항목3</li>
+                    <li>항목4</li>
+                </ul>
+            </aside>
+            <section class="line_blue">
+                <h2>본문</h2>
+                <article>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda voluptatem sit necessitatibus nesciunt corrupti doloribus maxime eveniet. Ut magnam maxime voluptatem possimus iste laudantium dignissimos! Iure, labore veritatis eveniet reiciendis provident dicta nam, at repellendus magni esse explicabo minima incidunt officiis. Modi maiores accusamus architecto laborum magnam! In molestias perferendis, esse illo rerum, eum tempora voluptas molestiae expedita omnis odit enim sequi, consequatur vero tempore numquam quos delectus fuga at repudiandae! Ipsa maiores quo beatae earum illum rerum repellendus. Nam dolore error nisi, veritatis vitae, nobis corrupti officia exercitationem tempora ea unde dolor magni? Aperiam quidem beatae animi officia!</article>
+                <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum soluta quas iusto quasi ipsa dolores dolorem natus dignissimos, impedit ullam non, magnam eveniet veritatis enim veniam eligendi laboriosam debitis! Libero?</article>
+            </section>
+            <aside class="line_blue">
+                <h2>사이드바</h2>
+                <ul>
+                    <li>항목1</li>
+                    <li>항목2</li>
+                    <li>항목3</li>
+                    <li>항목4</li>
+                </ul>
+            </aside>
+        </div>
+        <footer class="line_blue">
+            <h3>풋터</h3>
+            <p>저작권 정보, 카피라잇</p>
+        </footer>
+    </div>
+</body>
+
+</html>

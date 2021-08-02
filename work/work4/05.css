@@ -1,0 +1,26 @@
+#wrap{
+    width: 600px; 
+    margin: 0 auto;
+    border: 3px solid blue;
+    height: 600px;
+    position: relative;
+}
+#wrap div{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    font-size: 22px;
+    float: left;
+    position: absolute;
+}
+.box1{left: 0; top: 0;}
+.box2{right: 0; top: 0;}
+.box3{left: 0; bottom: 0;}
+.box4{right: 0; bottom: 0;}
+.box5{left: 50%; top: 50%; margin: -50px 0 0 -50px; }
+.box6{left: 50%; top: 50%; margin: -50px 0 0 -50px; background-color: rebeccapurple !important; z-index: 2;}
+.box7{left: 50%; top: 50%; margin: -50px 0 0 -50px; background-color: seagreen !important; z-index: 0;}
+#wrap .quick{width: 100px; height: 300px; background-color: red;
+right: -180px; top: 0; }
+#wrap .top{width: 50px; height: 50px; background-color: red; border-radius: 50%;
+right: 10px; bottom: 20px; position: fixed; text-align: center}

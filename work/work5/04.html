@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 1px solid #ddd;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            border: noen;
+        }
+        header, footer, section{
+            border-color: blue;
+        }
+        #wrap{
+        }
+        .inner{
+            width: 900px;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+        .clear::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        header{
+            background-color: wheat;
+        }
+        header .logo{
+            float: left;
+        }
+        header nav{
+            float: right;
+        }
+        .gnb{
+            list-style: none;
+        }
+        .gnb li{
+            float: left;
+            width: 100px;
+            height: 40px;
+            background-color: skyblue;
+            text-align: center;
+            line-height: 40px;
+            margin-left: 10px;
+        }
+        .gnb li :first-child { 
+            margin-left: 0;
+        }
+        .gnb li:hover{ 
+            background-color: steelblue;
+        }
+        .gnb li:hover a{ 
+            color: #fff;
+        }
+        #content{
+            width: 900px;
+            margin: 10px auto;
+            position: relative;
+        }
+        #content section{
+            height: 100px;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        /* .box1{width: 423px; margin-right: 10px;}
+        .box2{width: 423px;}
+        .box3{width: 271.3332px;}
+        .box4{width: 271.3332px; margin: 0 10px;}
+        .box5{width: 271.3332px;} */
+
+        .box1{width: 445px; margin-right: 10px; margin-bottom: 10px;}
+        .box2{width: 445px; margin-bottom: 10px;}
+        .box3{width: 293.3333px;}
+        .box4{width: 293.3333px; margin: 0 10px;}
+        .box5{width: 293.3333px;}
+        .box6{
+            position: absolute;
+            right: -120px;
+            top: 0;
+            width: 100px;
+            height: 200px !important;
+            background-color: red;
+        }
+        /* .box1, .box2, .box3, .box4, .box5 {
+            height: 60px;
+        }
+        #content .box1{
+            margin-top: 0;
+        }
+        .box1, .box2{
+            width: 443px;
+        } 
+        #content .box3, .box4, .box5{ width: 291px;
+            margin-bottom: 0;
+        }
+        #content .box1{
+            margin-left: 0;
+        }
+        #content .box3{
+            margin-left: 0;
+        }
+        .box6{
+            position: absolute;
+            right: -60px; top: 0;
+            background-color: red;
+            height: 144px;
+        } */
+        footer{
+            background-color: #ddd;
+            text-align: center;
+            /* height: 80px; */
+            
+        }
+        footer .inner{
+            height: 60px; 
+            position: relative;
+        }
+        footer p{
+            line-height: 54px;
+        }
+        footer span{
+            background-color: red;
+            color: white;
+            float: right;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            line-height: 50px;
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+        }
+        footer span:nth-last-of-type(1) {
+            right: 130px;
+        }
+        footer span:nth-last-of-type(2) {
+            right: 70px;
+        }
+        footer span:nth-last-of-type(3) {
+            right: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner clear">
+                <h1 class="logo">LOGO</h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="menu1">menu1</a></li>
+                        <li><a href="menu2">menu2</a></li>
+                        <li><a href="menu3">menu3</a></li>
+                        <li><a href="menu4">menu4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="content" class="clear">
+            <section class="box1">box1</section>
+            <section class="box2">box2</section>
+            <section class="box3">box3</section>
+            <section class="box4">box4</section>
+            <section class="box5">box5</section>
+            <section class="box6">banner</section>
+        </div>
+        <footer>
+            <div class="inner">
+                    <p>copyrihgt</p>
+                    <span>S</span>
+                    <span>N</span>
+                    <span>S</span>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

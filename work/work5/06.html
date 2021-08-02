@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 ;
+            padding: 0 ;
+        }
+        #wrap{
+            /* border: 1px solid #333; */
+            height: 900px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        header{
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        header h1{
+            line-height: 100px;
+
+        }
+        .line_gray{
+            border: 1px solid #333;
+        }
+        .clear::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #content{
+           position: relative;
+        }
+        #content section{
+            margin-bottom: 10px;
+            width: 600px;
+            height: 400px;
+            float: left;
+        }
+        #content p{
+            width: 600px;
+            height: 400px;
+            float: left;
+            position: absolute;
+        }
+        aside{
+            float: right;
+            padding: 10px;
+            width: 280px;
+            height: 400px;
+            background-color: hotpink;
+            /* position: relative; */
+            
+        }
+        aside ul{
+            float:right;
+            width: 280px;            
+            /* position: absolute; */
+        }
+        aside li{
+            width: 200px;
+            /* position: absolute; */
+        }
+        aside li{
+            text-align: left;
+            padding-left: 10px;
+            line-height: 40px;
+        }
+        footer{
+            height: 150px;
+            float: left;
+            line-height: 60px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap" class="line_gray">
+        <header class="line_gray clear">
+            <h1>사이트 제목</h1>
+            
+        </header>
+        <div id="content" class="clear">
+            <section class="line_gray">
+            <h2>본문</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ut quasi aspernatur placeat amet nihil
+                porro ab beatae autem dolore! Eum voluptatum eos minus voluptas error amet aliquam incidunt ullam vero
+                maiores animi ipsa velit quis accusantium voluptatem officia, neque pariatur. Dolore asperiores nulla
+                labore eveniet, omnis debitis porro magni optio aut necessitatibus pariatur est nemo, ab impedit quam
+                corrupti voluptate ea itaque accusantium? Reprehenderit esse natus id nesciunt, similique, totam,
+                tenetur odit veniam mollitia consectetur corrupti. Maiores facilis consectetur non qui ab praesentium
+                in? Non repellat, recusandae nemo, in, commodi dolorem voluptatum modi voluptates ullam hic temporibus
+                ipsum sit!</p>
+            </section>
+            <aside class="line_gray">
+                <h2>사이드 바</h2>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam dolor ducimus eaque corporis
+                        tempore veritatis? Dolor vero, reiciendis doloribus sint voluptatum beatae modi ut odit aliquid,
+                        cum nemo recusandae adipisci.
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <footer class="line_gray clear">
+            <h2>푸터</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellendus quas aliquid iure amet a doloremque!</p>
+        </footer>
+    </div>
+</body>
+
+</html>

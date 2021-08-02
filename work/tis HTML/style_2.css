@@ -1,0 +1,40 @@
+h1{
+    color: rgb(253, 0, 127);
+    border-bottom: purple 10px dotted ; 
+    margin-bottom: 20px auto;
+}
+ /* h1이랑 점선 사이 간격을 어떻게 벌리지??? */
+
+h2{
+    font-style: italic;
+}
+t
+ul{
+    background-color: #eeeeee;
+    border:purple 5px solid;
+    padding: 2em;
+}
+
+a:hover{
+    color: rgb(255, 121, 11);
+}
+
+.test_3{
+    background-color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.test_2{
+    color: rgb(114, 111, 111);
+    font-weight: bold;
+    font-size: larger;
+}
+
+fieldset{
+    border-color: rgb(253, 0, 127);
+    font-size: auto;
+    line-height: 1.2;
+}
+/* fieldset 두께 조절 어찌하는지 테두리를 css에서도 fieldset으로 만드는게 맞는건지?? */
+
