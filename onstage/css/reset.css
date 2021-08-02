@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 300;  
+    src: local('NanumSquare'), url('../webfont/NanumSquare_acL.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 400;  
+    src: local('NanumSquare'), url('../webfont/NanumSquare_acR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 700;  
+    src: local('NanumSquare'), url('../webfont/NanumSquare_acB.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 800;  
+    src: local('NanumSquare'), url('../webfont/NanumSquare_acEB.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+div { box-sizing: border-box; }
+
+/* Common */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,select{
+    margin:0;
+    padding:0;
+}
+body,input,textarea,select,button{
+    font-family:'나눔스퀘어',NanumSquare,'나눔고딕',NanumGothic,'맑은고딕',MalgunGothic,'돋움',Dotum,Helvetica,sans-serif;
+    font-size:12px;
+}
+img {
+    border: 0;
+    vertical-align: top;
+}
+ol,
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:active,
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+.blind {
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(0 0 0 0) !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+}
