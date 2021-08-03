@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투표 가능한지 확인</title>
+</head>
+
+<body>
+    <h1>투표 가능한 나이 확인하기</h1>
+    <input type="text" id="age" placeholder="나이를 입력하세요">
+    <button onclick="vote()">확인</button>
+    <hr>
+    <p id="result"><!-- 결과 출력 --></p>
+    <script>
+         
+        function vote() {
+            let age = document.getElementById('age').value;
+            const standard = 18;  // 상수 >>> 변하지 않는 데이터
+            var result = age > standard ? "투표 가능합니다." : "투표 불가능 합니다.";
+            // document.getElementById('age').value = result;
+            document.getElementById('result').innerHTML = "당신은" + result ;
+        }
+    </script>
+</body>
+
+</html>

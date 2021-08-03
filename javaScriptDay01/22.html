@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>용돈 계산기</title>
+</head>
+
+<body>
+    총 용돈 : <input type="text" id="all" value="10000">원
+    <hr>
+    교통비 : <input type="text" id="pr1">원<br>
+    식비 : <input type="text" id="pr2">원<br>
+    기타 : <input type="text" id="pr3">원
+    <hr>
+    <button onclick="price()">계산하기</button>
+    <p id="result"></p>
+    <script>
+        // function priceM() {
+        //     // let over = document.getElementById('all').value;
+        //     const total = 10000;
+        //     var pr1 = document.getElementById('pr1').value;
+        //     document.getElementById('pr2').value;
+        //     document.getElementById('pr3').value;
+            
+        //     var result =  total  < pr1 + pr2 + pr3 ? "돈 관리 잘했어요" : "원 초과";
+        //     var result1 = total - pr1 + pr2 +pr3 ;
+            
+        //     // var result2 = result + result1;
+        //     document.getElementById('result').innerHTML = result;
+        // }
+        function price() {
+            let all = document.getElementById("all").value;
+            let pr1 = document.getElementById("pr1").value;
+            let pr2 = document.getElementById("pr2").value;
+            let pr3 = document.getElementById("pr3").value;
+            let total = Number(pr1) + Number(pr2) + Number(pr3);
+            // console.log(typeof total, total);
+            
+            let result = all > total ? (all-total)+"원 아끼셨으니 용돈 관리를 잘했습니다." : (total-all)+"원 초과";
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

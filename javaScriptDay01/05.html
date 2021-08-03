@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동 형변환</title>
+</head>
+<body>
+    <script>
+        var num = 5;
+        var text = "5";
+        
+        console.log(num+null);  //5 + 0 = 5
+        console.log(text+null); //"5" + null = 5null
+        console.log(text+2);    //"5"+ 2 = 52
+        console.log(text-2);    //5 - 2 = 3
+        console.log(text*'2');  //5 * 2 = 10
+    </script>
+</body>
+</html>

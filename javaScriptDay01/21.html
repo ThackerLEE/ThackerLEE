@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> cm 단위 >> m 단위 환산</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <script>
+        let cm = prompt('cm단위를 입력하세요');
+        const div = 100; //변하지 않는 상수값
+        let m = cm / div;
+    
+        document.getElementById('result').innerHTML = `${cm} cm는 m단위로 환산하면  $123{m} 입니다.`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ice"></p>
+    <button onclick="test()">확인</button>
+    <script>
+        var price = 1000;
+        var num = 5;
+
+        var text = "아이스크림은 "+ price +" 원에 "+num+" 개 구매했습니다.";
+        var text2 = `초콜릿 아이스크림은 ${price}  원에 ${num} 개 구매했습니다.`; 
+                        // ` >백틱 > ~
+        document.write(text, "<br>");
+
+        function test() {
+            // document.write(text2);
+            document.getElementById('ice').innerHTML = text2;
+        }
+
+    </script>
+</body>
+</html>
