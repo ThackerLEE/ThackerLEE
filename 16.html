@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더하기 연산</title>
+</head>
+<body>
+    <input type="text" id="num1" size="2">
+    <input type="text" id="num2" size="2">
+    <button onclick="add()"> + </button>
+    <input type="text" id="result">
+    <script>
+        function add(){
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById("num2").value;
+            var text = Number("3");
+            console.log(typeof text);
+            console.log(num1, num2);
+            var result = Number(num1) + Number(num2);
+
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <input type="text" id="num1" size="2">
+    <input type="text" id="num2" size="2">
+    <hr>
+    <button onclick="add()"> + </button>
+    <button onclick="sub()"> - </button>
+    <button onclick="mul()"> × </button>
+    <button onclick="div()"> ÷ </button>
+    <hr>
+    <input type="text" id="result">
+    <script>
+        
+        function add(){
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById("num2").value;
+            // console.log(typeof num1);
+            var result = Number(num1) + Number(num2);
+
+            document.getElementById('result').value = result;
+        }
+        function sub(){
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById("num2").value;
+            // console.log(typeof num1);
+            var result = Number(num1) - Number(num2);
+            //자바스크립트 형변환 특징 Number작성안해도 -는 먹음 but 안전하게 쓰는게 좋음
+            document.getElementById('result').value = result;
+        }
+        function mul(){
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById("num2").value;
+            // console.log(typeof num1);
+            var result = Number(num1) * Number(num2);
+            
+            document.getElementById('result').value = result;
+        }
+        function div(){
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById("num2").value;
+            // console.log(typeof num1);
+            var result = Number(num1) / Number(num2);
+         
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+</html>
