@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @ThackerLEE (korea name is 
+- 👋 Hi, I’m @ThackerLEE (Korea name is "GI WEON LEE")
 - 👀 I’m interested in Front-end development
 - 🌱 I’m currently learning JavaScript , React, Vue, Rest api, Node.JS
 - 💞️ I’m working to collaborate on website develpoment to AKAAi Company.
